@@ -20,6 +20,7 @@ class SongList extends Component {
       );
     })
   }
+
   render() {
     return (
       <div className="ui divided list">
@@ -39,5 +40,7 @@ const mapStateToProps = (state) => {
   };
 }
 
-// pass connect a function
+// pass connect a function that returns some state/
+// second param takes actionCreators, and when an action is create onClick above,
+// the connect function takes what's returned (an Action), and automatically passes it to the dispatch function
 export default connect(mapStateToProps, { selectSong })(SongList);

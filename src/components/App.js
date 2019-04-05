@@ -1,6 +1,6 @@
 import React from 'react';
 import SongList from './SongList';
-// named export so I use curly braces
+import SongDetail from './SongDetail';
 
 const App = () => {
   return (
@@ -8,7 +8,10 @@ const App = () => {
       <div className="ui row">
         <div className="column eight wide">
           <SongList />
-        </div>  
+        </div>
+        <div className="column eight wide">
+          <SongDetail />
+        </div>
       </div>
     </div>
   )
